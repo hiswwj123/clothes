@@ -43,7 +43,7 @@ public class UserIO {
         ObjectInputStream in = null;
         try {
             in = new ObjectInputStream(new FileInputStream(USER_FILE));
-            in.readObject();
+            users = (List<User>) in.readObject();
             in.close();
             return true;
         } catch (IOException | ClassNotFoundException e) {
@@ -67,11 +67,11 @@ public class UserIO {
      * @return
      */
     public User findUserByList(String username,String password){
-        for(User u:users){
-            if(username.equals(u.getUserName()) && password.equals(u.getPassWord())){
-                return u;
+            for(User u:users){
+                if(username.equals(u.getUserName()) && password.equals(u.getPassWord())){
+                    return u;
+                }
             }
-        }
         return null;
     }
 

@@ -1,5 +1,6 @@
 package com.wangjun.ui;
 
+import com.wangjun.bean.User;
 import com.wangjun.utils.UserIO;
 
 /**
@@ -11,14 +12,11 @@ public class WelcomeClass extends BaseClass {
      * 开始类
      */
     public static void start(){
-        try {
-            UserIO.readObject();
-        } catch (BusinessException e) {
-            println(getString(e.getMessage()));
-        }
         println(getString("info.welcome"));
+        UserIO userIO = new UserIO();
+        userIO.readObject();
         boolean flag = true; //控制循环条件的标记
-        while(flag){
+        loop:while(flag){
             println(getString("info.login.reg"));
             println(getString("info.select"));
             int select = input.nextInt();
@@ -26,10 +24,12 @@ public class WelcomeClass extends BaseClass {
                 case 1:
                     flag = false;
                     try {
-                        LoginClass.login();
+                        User user = LoginClass.login();
                         println(getString("login.success"));
+                        //登录界面
+                        HomeClass.show();
                     } catch (BusinessException e) {
-                        println(getString("login.error"));
+                        println(getString(e.getMessage()));
                         flag =true;
                     }
                     break;
@@ -42,13 +42,12 @@ public class WelcomeClass extends BaseClass {
                     } catch (BusinessException e) {
                         println(getString("reg.error"));
                     }
-                    break;
+                    break loop;
                 default:
                     println(getString("input.error"));
                     flag = true;
                     break;
             }
-
         }
 
     }

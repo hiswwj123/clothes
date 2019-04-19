@@ -24,8 +24,9 @@ public class RegisterClass extends BaseClass{
         UserService userService = new UserServiceImpl();
 
         try {
-//            userService.register(user); //存入文件中
-            userService.registerDB(user);
+            //存入文件中
+            userService.register(user);
+            //userService.registerDB(user);
         } catch (BusinessException e) {
             println(getString(e.getMessage()));
         }

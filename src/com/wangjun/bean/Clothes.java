@@ -95,4 +95,17 @@ public class Clothes implements Serializable {
         this.descrption = descrption;
     }
 
+    @Override
+    public String toString() {
+        return "Clothes{" +
+                "id='" + id + '\'' +
+                ", brand='" + brand + '\'' +
+                ", style='" + style + '\'' +
+                ", color='" + color + '\'' +
+                ", size='" + size + '\'' +
+                ", num=" + num +
+                ", price=" + price +
+                ", descrption='" + descrption + '\'' +
+                '}';
+    }
 }

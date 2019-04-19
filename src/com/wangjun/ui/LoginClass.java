@@ -18,8 +18,13 @@ public class LoginClass extends BaseClass {
         User user = new User(username,password);
 
         UserService userService = new UserServiceImpl();
-        User login = userService.login(user);
+        User login = userService.login(username,password);
 
+        if(login != null){
+            currUser = login;
+        }else {
+            throw new BusinessException("login.error");
+        }
         return login;
     }
 }

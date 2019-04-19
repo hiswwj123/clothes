@@ -9,9 +9,9 @@ import com.wangjun.ui.BusinessException;
  */
 public interface UserService {
     //用户注册
-    public void register(User user) throws BusinessException;
+    public User register(User user) throws BusinessException;
     //用户注册，注册到数据库中
     public void registerDB(User user)throws BusinessException;
     //用户登录
-    public User login(User user) throws BusinessException;
+    public User login(String username,String pasword) throws BusinessException;
 }
