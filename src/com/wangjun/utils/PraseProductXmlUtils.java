@@ -15,40 +15,44 @@ import java.util.List;
  */
 public class PraseProductXmlUtils {
     /**
-     * 获取xml内容，获取到衣服列表
+     * 获取xml内容，获得衣服列表集合
      * @return
      * @throws BusinessException
      */
     public static List<Clothes> getColthes() throws BusinessException {
-        List<Clothes> products = new ArrayList<>();
+        List<Clothes> clothes = new ArrayList<>();
         XStream xStream = new XStream(new Xpp3Driver());
-        xStream.alias("list",products.getClass());
+        xStream.alias("list",clothes.getClass());
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
 
         BufferedInputStream in = null;
         try {
             in = new BufferedInputStream(new FileInputStream("clothes.xml"));
-            products = (List<Clothes>) xStream.fromXML(in);
+            clothes = (List<Clothes>) xStream.fromXML(in);
             in.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return products;
+        return clothes;
     }
 
-    public static void writeProductsToXml(List<Clothes> products){
+    /**
+     * 购买完商品之后，需要更新xml里面的商品数量
+     * @param clothes
+     */
+    public static void writeProductsToXml(List<Clothes> clothes){
         XStream xStream = new XStream(new Xpp3Driver());
-        xStream.alias("list",products.getClass());
+        xStream.alias("list",clothes.getClass());
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
 
         try {
             BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream("clothes"));
             out.write("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>".getBytes());
-            xStream.toXML(products,out);
+            xStream.toXML(clothes,out);
             out.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

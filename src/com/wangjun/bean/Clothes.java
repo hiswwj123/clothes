@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @Author:wangjun
  * @Data:Createa in 2019/4/15 0015 22:34
- * 衣服类
+ * 衣服类,实体类
  */
 public class Clothes implements Serializable {
     private String id; //商品id

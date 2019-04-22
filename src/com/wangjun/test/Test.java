@@ -1,10 +1,12 @@
 package com.wangjun.test;
 
 import com.wangjun.bean.Clothes;
+import com.wangjun.utils.DateUtils;
 import com.wangjun.utils.PraseProductXmlUtils;
 import com.wangjun.utils.UserIO;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,8 +19,10 @@ public class Test {
         List<Clothes> colthes = PraseProductXmlUtils.getColthes();
         System.out.println(Arrays.toString(colthes.toArray()));
     }
+
     @org.junit.Test
     public void test1(){
-        System.out.println(UserIO.users.size());
+        DateUtils dateUtils = new DateUtils();
+        System.out.println(dateUtils.toDate(new Date()));
     }
 }

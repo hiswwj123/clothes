@@ -52,7 +52,7 @@ public class DataBaseUtils extends BaseClass {
     }
 
     /**
-     * 批量将数组插入数据库
+     * 批量将数据插入数据库
      * @param conn 数据库连接对象
      * @param id 用户id
      * @param name 用户姓名

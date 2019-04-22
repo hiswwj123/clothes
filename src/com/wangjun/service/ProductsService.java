@@ -10,5 +10,6 @@ import java.util.List;
  * @Data:Createa in 2019/4/19 0019 21:11
  */
 public interface ProductsService {
-    public  List<Clothes> getProducts()throws BusinessException;
+    public  List<Clothes> getClothes()throws BusinessException;
+    public Clothes findClothesById(String id)throws BusinessException;
 }
