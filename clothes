@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?><list>
+  <clothes id="A001">
+    <brand>BAOSHENREN</brand>
+    <style>男t恤</style>
+    <color>黑色1012</color>
+    <size>4XL</size>
+    <num>5</num>
+    <price>89.0</price>
+    <descrption>国潮2019夏季新款短袖上衣圆领打底衫半袖潮流体恤半袖百搭运动上衣</descrption>
+  </clothes>
+  <clothes id="A002">
+    <brand>南极人</brand>
+    <style>短袖T恤男纯棉弹力印花半袖2019新款</style>
+    <color>4件装14黑+02灰色+04白色+09蓝色</color>
+    <size>L码</size>
+    <num>10</num>
+    <price>78.0</price>
+    <descrption>短袖T恤男纯棉弹力印花半袖2019新款圆领青年韩版修身潮夏季时尚休闲上衣打底衫</descrption>
+  </clothes>
+  <clothes id="A003">
+    <brand>滋涩</brand>
+    <style>连衣裙2019春夏新品女装韩版</style>
+    <color>蓝白</color>
+    <size>M</size>
+    <num>3</num>
+    <price>138.0</price>
+    <descrption>连衣裙2019春夏新品女装韩版时尚套装女短袖T恤衣服新款一字肩裙子汉服沙滩裙两件套装裙春款Z13 </descrption>
+  </clothes>
+  <clothes id="A004">
+    <brand>勿忘花</brand>
+    <style>连衣裙女夏季女装短袖碎花2019新款</style>
+    <color>淡黄色</color>
+    <size>L</size>
+    <num>1</num>
+    <price>288.0</price>
+    <descrption>夏装黄色纯棉中长款收腰显瘦中长裙气质淑女长裙子过膝遮肚</descrption>
+  </clothes>
+  <clothes id="A005">
+    <brand>巴布淘淘童装</brand>
+    <style>女童套装春夏装新品2019新款</style>
+    <color>紫粉色</color>
+    <size>140码</size>
+    <num>5</num>
+    <price>102.0</price>
+    <descrption>儿童韩版衬衫连衣裙子洋气两件套裙春秋中大童女装时髦女孩衣服</descrption>
+  </clothes>
+  <clothes id="A006">
+    <brand>猫人</brand>
+    <style>女式性感包臀内裤</style>
+    <color>肤色+蓝绿+深灰</color>
+    <size>L</size>
+    <num>20</num>
+    <price>69.0</price>
+    <descrption>3条装女士内裤女纯色棉质一片式无痕中腰透气三角短裤头女式性感包臀内裤</descrption>
+  </clothes>
+  <clothes id="A007">
+    <brand>法国KJ</brand>
+    <style>无钢圈文胸加厚小胸平胸聚拢性感蕾丝</style>
+    <color>紫色</color>
+    <size>75B=34B(配M码内裤)</size>
+    <num>12</num>
+    <price>45.0</price>
+    <descrption>内衣女士品牌胸罩上托侧收乳罩少女文胸套装2019新款 紫色 75B=34B(配M码内裤)</descrption>
+  </clothes>
+</list>

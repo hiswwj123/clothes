@@ -1,6 +1,8 @@
 package com.wangjun.utils;
 
 import com.wangjun.bean.Order;
+import com.wangjun.service.ProductsService;
+import com.wangjun.service.impl.ProductsImpl;
 import com.wangjun.ui.BusinessException;
 
 import java.io.*;
@@ -15,7 +17,6 @@ public class OrderIO {
 
     public static List<Order> orders = new ArrayList<>();
     public static String ORDER_FILE = "order.obj";
-
     /**
      * 将订单保存到文件中
      * @throws BusinessException

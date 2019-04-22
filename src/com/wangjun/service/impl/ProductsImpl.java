@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class ProductsImpl implements ProductsService {
 
+    public static ClothesIO clothesIO = new ClothesIO();
     /**
      * 直接调用工具类来获取产品
      * @return
@@ -21,13 +22,19 @@ public class ProductsImpl implements ProductsService {
      */
     @Override
     public  List<Clothes> getClothes() throws BusinessException {
-        List<Clothes> colthes = PraseProductXmlUtils.getColthes();
-        return colthes;
+//        List<Clothes> colthes = PraseProductXmlUtils.getColthes();
+        List<Clothes> clothes = clothesIO.findClothes();
+        return clothes;
     }
 
     @Override
     public Clothes findClothesById(String id) throws BusinessException {
         Clothes clothesById = ClothesIO.findClothesById(id);
         return clothesById;
+    }
+
+    @Override
+    public void update() throws BusinessException {
+        ClothesIO.updateXml();
     }
 }

@@ -19,6 +19,15 @@ public class Order implements Serializable {
     private float sum; //总金额
     private OrderStausType staus = OrderStausType.UNPAID; //订单状态
     private int userId;
+    private String createDate; //订单的打印时间
+
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
+    }
 
     public Order(int orderId, List<OrderItem> list, float sum, OrderStausType staus, int userId) {
         this.orderId = orderId;

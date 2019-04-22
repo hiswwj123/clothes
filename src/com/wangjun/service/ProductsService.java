@@ -12,4 +12,5 @@ import java.util.List;
 public interface ProductsService {
     public  List<Clothes> getClothes()throws BusinessException;
     public Clothes findClothesById(String id)throws BusinessException;
+    public void update()throws BusinessException;
 }

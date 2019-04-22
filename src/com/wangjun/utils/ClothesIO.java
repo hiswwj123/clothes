@@ -15,8 +15,7 @@ public class ClothesIO {
 
     public static Clothes findClothesById(String cid)throws BusinessException{
         for (Clothes c:clothes){
-            String id = c.getId();
-            if(cid == id){
+            if(cid.equals(c.getId())){
                 return c;
             }
         }
@@ -24,8 +23,17 @@ public class ClothesIO {
     }
 
     public static List<Clothes> findClothes()throws BusinessException{
-        clothes = PraseProductXmlUtils.getColthes();
+        if(clothes.size() == 0){
+            clothes = PraseProductXmlUtils.getColthes();
+        }
         return clothes;
     }
 
+    /**
+     * 更新xml文件
+     * @throws BusinessException
+     */
+    public static void updateXml()throws BusinessException{
+        PraseProductXmlUtils.writeProductsToXml(clothes);
+    }
 }

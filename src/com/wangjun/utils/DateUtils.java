@@ -14,7 +14,7 @@ public class DateUtils {
      * @param date 系统时间
      * @return
      */
-    public String toDate(Date date){
+    public static String toDate(Date date){
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return df.format(date);
     }
