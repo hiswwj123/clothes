@@ -26,39 +26,89 @@ public class HomeClass extends BaseClass{
      * 显示主页面的功能
      */
     public static void show(){
-
      showProducts();
      println(getString("info.welcomlogin")+currUser.getUserName());
-     println(getString("product.feature"));
-     String select = input.next();
-     //处理功能
-     switch(select){
-         case "1": //查询所有订单
-             findProducts();
-             break;
-         case "2": //根据id来查询
-             findProductById();
-             break;
-         case "3": //购买功能
-             buyProduct();
-             break;
-         case "0": //退出系统
-             System.exit(0);
-             break;
-         default:
-             println(getString("input.error"));
-             break;
-     }
+     menu();
+    }
 
-
-
+    /**
+     * 显示菜单
+     */
+    public static void menu() {
+        boolean flag = true;
+        while (flag){
+            println(getString("product.feature"));
+            println(getString("info.select"));
+            String select = input.next();
+            //处理功能
+            switch(select){
+                case "1": //查询所有订单
+                    findProducts();
+                    flag = false;
+                    break;
+                case "2": //根据id来查询
+                    findProductById();
+                    flag = false;
+                    break;
+                case "3": //购买功能
+                    buyProduct();
+                    flag = false;
+                    break;
+                case "4": //显示商品
+                    show();
+                    flag = false;
+                    break;
+                case "0": //退出系统
+                    System.exit(0);
+                    flag = false;
+                    println(getString("system.exit"));
+                    break;
+                default:
+                    println(getString("input.error"));
+                    break;
+            }
+        }
     }
 
     /**
      * 查询所有订单
      */
     private static void findProducts() {
+        List<Order> orders = orderService.findOrder(); //返回所有订单
+        for (Order o:orders) {
+            showOrder(o);
+        }
+        menu();
+    }
 
+    private static void showOrder(Order order) {
+        print(getString("product.order.id")+order.getOrderId());
+        print(getString("product.order.createdate")+order.getCreateDate());
+        println(getString("product.order.sum")+order.getSum());
+        ConsoleTable t = new ConsoleTable(9, true);
+        t.appendRow();
+        t.appendColum("itemid").
+                appendColum("brand").
+                appendColum("style").
+                appendColum("color").
+                appendColum("size").
+                appendColum("price").
+                appendColum("shoppingNum").
+                appendColum("descrption").
+                appendColum("sum");
+       for(OrderItem orderItem :order.getList()){
+           t.appendRow();
+           t.appendColum(orderItem.getItemid()).
+                   appendColum(orderItem.getClothes().getBrand()).
+                   appendColum(orderItem.getClothes().getStyle()).
+                   appendColum(orderItem.getClothes().getColor()).
+                   appendColum(orderItem.getClothes().getSize()).
+                   appendColum(orderItem.getClothes().getPrice()).
+                   appendColum(orderItem.getShoppingNum()).
+                   appendColum(orderItem.getClothes().getDescrption()).
+                   appendColum(orderItem.getSum());
+       }
+       println(t.toString());
     }
 
     /**
@@ -69,7 +119,7 @@ public class HomeClass extends BaseClass{
     }
 
     /**
-     * 购买的方法
+     * 购买商品
      */
     private static void buyProduct() {
        boolean flag = true;
@@ -90,14 +140,14 @@ public class HomeClass extends BaseClass{
                throw new BusinessException("product.kucu");
            }
            clothesById.setNum(clothesById.getNum()-shoppingNum); //减去库存
+
            //生成订单详细
            OrderItem orderItem = new OrderItem();
-
            orderItem.setShoppingNum(shoppingNum);
            orderItem.setClothes(clothesById);
            orderItem.setSum(clothesById.getPrice()*shoppingNum);
            orderItem.setItemid(count++);
-           order.getList().add(orderItem);
+           order.getList().add(orderItem); //将订单明细存到订单中，便于生成订单
            sum +=orderItem.getSum(); //计算的是订单总金额
            println(getString("input.jixu"));
            String isBuy = input.next();
@@ -116,17 +166,20 @@ public class HomeClass extends BaseClass{
        order.setSum(sum);
        order.setUserId(currUser.getId());
        order.setCreateDate(DateUtils.toDate(new Date()));
-       order.setOrderId(orderService.findOrder().size()+1);
+       order.setOrderId(orderService.finOrder1().size()+1);
 
        orderService.byproduct(order);
        //买完之后就要进行库存减少
        productsService.update();
-       showProducts();
+       menu();
     }
 
+    /**
+     * 展示产品列表
+     */
     public static void showProducts(){
         ProductsService productsService = new ProductsImpl();
-        List<Clothes> products = productsService.getClothes();
+        List<Clothes> products = productsService.getClothes(); //获取衣服列表
         ConsoleTable t = new ConsoleTable(8, true);
         t.appendRow();
         t.appendColum("ID").
@@ -148,7 +201,7 @@ public class HomeClass extends BaseClass{
                     appendColum(c.getPrice()).
                     appendColum(c.getDescrption());
         }
-        System.out.println(t.toString());
+        println(t.toString());
 
     }
 

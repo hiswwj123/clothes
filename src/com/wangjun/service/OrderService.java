@@ -14,4 +14,5 @@ public interface OrderService {
     public void byproduct(Order order)throws BusinessException;
     public List<Order> findOrder()throws BusinessException;
     public Order findOrderById(int oid)throws BusinessException;
+    public List<Order> finOrder1()throws BusinessException;
 }

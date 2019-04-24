@@ -66,11 +66,16 @@ public class OrderIO {
     }
 
     /**
-     * 查询多有订单
+     * 查询所有订单
      * @return
      * @throws BusinessException
      */
     public List<Order> findOrders()throws BusinessException{
+        readOrders();
+        return orders;
+    }
+
+    public List<Order> findOrders1()throws BusinessException{
         return orders;
     }
 

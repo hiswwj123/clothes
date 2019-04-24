@@ -8,7 +8,7 @@ import java.io.Serializable;
  * 订单明细类
  */
 public class OrderItem implements Serializable {
-    private int itemid;
+    private int itemid; //订单id
     private Clothes clothes; //商品
     private int shoppingNum; //购买数量
     private float sum; //购买金额

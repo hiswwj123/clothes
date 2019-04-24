@@ -17,6 +17,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void byproduct(Order order) throws BusinessException {
         orderIO.add(order);
+        orderIO.writeOreders();
     }
 
     @Override
@@ -29,5 +30,16 @@ public class OrderServiceImpl implements OrderService {
     public Order findOrderById(int oid) throws BusinessException {
         Order orderById = orderIO.findOrderById(oid);
         return orderById;
+    }
+
+    /**
+     * 用来获取订单集合的大小
+     * @return
+     * @throws BusinessException
+     */
+    @Override
+    public List<Order> finOrder1() throws BusinessException {
+        List<Order> orders = orderIO.findOrders1();
+        return orders;
     }
 }
