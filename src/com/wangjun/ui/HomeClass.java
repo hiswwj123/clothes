@@ -22,12 +22,13 @@ import java.util.List;
 public class HomeClass extends BaseClass{
     public static ProductsService productsService = new ProductsImpl(); //购买商品的类
     public static OrderService orderService = new OrderServiceImpl();
+    public static StringBuilder stringBuilder = new StringBuilder(); //由于使用+比较容易造成资源浪费
     /**
      * 显示主页面的功能
      */
     public static void show(){
      showProducts();
-     println(getString("info.welcomlogin")+currUser.getUserName());
+     println(stringBuilder.append(getString("info.welcomlogin")).append(currUser.getUserName()).toString());
      menu();
     }
 

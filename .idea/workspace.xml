@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a6c79d4f-e6f2-47cf-93f2-7008351f3240" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothes" beforeDir="false" afterPath="$PROJECT_DIR$/clothes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.obj" beforeDir="false" afterPath="$PROJECT_DIR$/order.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/res/r.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/res/r.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/res/r.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/res/r.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/res/r_temp.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/res/r_temp.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/ui/HomeClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/ui/HomeClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,17 +66,17 @@
         <counts>
           <entry key="bat" value="62" />
           <entry key="dummy" value="2" />
-          <entry key="java" value="11489" />
+          <entry key="java" value="11575" />
           <entry key="properties" value="1119" />
-          <entry key="txt" value="73" />
+          <entry key="txt" value="74" />
           <entry key="xml" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bat" value="62" />
-          <entry key="JAVA" value="11489" />
-          <entry key="PLAIN_TEXT" value="75" />
+          <entry key="JAVA" value="11575" />
+          <entry key="PLAIN_TEXT" value="76" />
           <entry key="Properties" value="1119" />
           <entry key="XML" value="188" />
         </counts>
@@ -89,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="361">
+              <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="57">
+              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#211#212#0" expanded="true" />
@@ -375,7 +374,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556087852627" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556088468829" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellijreptile" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -512,7 +511,7 @@
       <workItem from="1555679118551" duration="6055000" />
       <workItem from="1555917784507" duration="14110000" />
       <workItem from="1555938541109" duration="1205000" />
-      <workItem from="1556075139354" duration="10073000" />
+      <workItem from="1556075139354" duration="10653000" />
     </task>
     <task id="LOCAL-00001" summary="增加获取当前时间的工具类">
       <created>1555839373970</created>
@@ -542,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556086493317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add buyproduct 3">
+      <created>1556087978913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556087978913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -569,7 +575,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100221000" />
+    <option name="totallyTimeSpent" value="100801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,7 +598,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" visible="true" weight="0.12170088" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" visible="true" weight="0.24633431" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.29032257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -625,7 +631,8 @@
     <MESSAGE value="增加基类" />
     <MESSAGE value="add buyproduct 1" />
     <MESSAGE value="add buyproduct 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buyproduct 2" />
+    <MESSAGE value="add buyproduct 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buyproduct 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clothessupermarkersystem.iml">
@@ -906,17 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/WelcomeClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -924,10 +920,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="361">
+          <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
