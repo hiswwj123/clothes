@@ -9,14 +9,10 @@
     <list default="true" id="a6c79d4f-e6f2-47cf-93f2-7008351f3240" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clothes" beforeDir="false" afterPath="$PROJECT_DIR$/clothes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/ui/HomeClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/clothessupermarkersystem/com/wangjun/ui/HomeClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/bean/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/bean/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.obj" beforeDir="false" afterPath="$PROJECT_DIR$/order.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wangjun/res/r.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/res/r.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wangjun/utils/OrderIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangjun/utils/OrderIO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +47,7 @@
         <counts>
           <entry key="bat" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="150" />
+          <entry key="java" value="151" />
           <entry key="properties" value="22" />
           <entry key="txt" value="1" />
           <entry key="xml" value="5" />
@@ -61,7 +57,7 @@
         <counts>
           <entry key="Bat" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="150" />
+          <entry key="JAVA" value="151" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="22" />
           <entry key="XML" value="5" />
@@ -71,18 +67,18 @@
         <counts>
           <entry key="bat" value="62" />
           <entry key="dummy" value="2" />
-          <entry key="java" value="11387" />
-          <entry key="properties" value="1054" />
-          <entry key="txt" value="72" />
+          <entry key="java" value="11489" />
+          <entry key="properties" value="1119" />
+          <entry key="txt" value="73" />
           <entry key="xml" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bat" value="62" />
-          <entry key="JAVA" value="11387" />
-          <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Properties" value="1054" />
+          <entry key="JAVA" value="11489" />
+          <entry key="PLAIN_TEXT" value="75" />
+          <entry key="Properties" value="1119" />
           <entry key="XML" value="188" />
         </counts>
       </usages-collector>
@@ -93,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+            <state relative-caret-position="106">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" selection-end-column="11" />
+            <state relative-caret-position="348">
+              <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -132,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wangjun/bean/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="57">
+              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#561#562#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
@@ -142,15 +138,6 @@
                 <element signature="e#1146#1147#0" expanded="true" />
                 <element signature="e#1173#1174#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wangjun/bean/Clothes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -172,11 +159,20 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#211#212#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/WelcomeClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -257,10 +253,10 @@
         <option value="$PROJECT_DIR$/src/com/wangjun/utils/ClothesIO.java" />
         <option value="$PROJECT_DIR$/src/com/wangjun/service/impl/ProductsImpl.java" />
         <option value="$PROJECT_DIR$/src/com/wangjun/bean/OrderItem.java" />
-        <option value="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" />
         <option value="$PROJECT_DIR$/src/com/wangjun/utils/OrderIO.java" />
         <option value="$PROJECT_DIR$/src/com/wangjun/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/com/wangjun/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties" />
         <option value="$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java" />
       </list>
     </option>
@@ -379,7 +375,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556086390005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556087852627" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellijreptile" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -516,7 +512,7 @@
       <workItem from="1555679118551" duration="6055000" />
       <workItem from="1555917784507" duration="14110000" />
       <workItem from="1555938541109" duration="1205000" />
-      <workItem from="1556075139354" duration="8496000" />
+      <workItem from="1556075139354" duration="10073000" />
     </task>
     <task id="LOCAL-00001" summary="增加获取当前时间的工具类">
       <created>1555839373970</created>
@@ -539,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555930317316</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add buyproduct 2">
+      <created>1556086493317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556086493317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -566,7 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98644000" />
+    <option name="totallyTimeSpent" value="100221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,9 +582,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19034852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -590,7 +592,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49731904" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" visible="true" weight="0.12170088" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.29032257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,7 +624,8 @@
     <MESSAGE value="增加获取当前时间的工具类" />
     <MESSAGE value="增加基类" />
     <MESSAGE value="add buyproduct 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buyproduct 1" />
+    <MESSAGE value="add buyproduct 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buyproduct 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clothessupermarkersystem.iml">
@@ -827,28 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/WelcomeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjun/bean/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjun/bean/Clothes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -884,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjun/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjun/utils/OrderIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -903,10 +877,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangjun/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wangjun/bean/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
@@ -914,17 +917,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wangjun/res/r_temp.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/WelcomeClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" selection-end-column="11" />
+        <state relative-caret-position="71">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangjun/ui/HomeClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+        <state relative-caret-position="106">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

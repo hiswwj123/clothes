@@ -115,7 +115,14 @@ public class HomeClass extends BaseClass{
      * ≤È’“∂©µ•
      */
     private static void findProductById() {
-
+        println(getString("product.id"));
+        int orderid = input.nextInt();
+        List<Order> order = orderService.findOrder();
+        for (Order o:order){
+            if(orderid == o.getOrderId()){
+                showOrder(o);
+            }
+        }
     }
 
     /**
